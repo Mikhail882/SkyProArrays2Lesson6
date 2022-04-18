@@ -45,22 +45,23 @@ public class Main {
 //                System.out.println("Максимальная сумма трат за день составила "+ max +" рублей");
 
         //Задача 3
-        double average = 0;
-            average = sum / arr.length;
+        float average = 0;
+            average = (float)sum / arr.length;
         System.out.println("Средняя сумма трат за месяц составила "+ average +" рублей");
 
         //Задача 4
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        int i = reverseFullName.length - 1, j = 0;
-        char[] let = new char[reverseFullName.length];
-        while (i >= 0) {
-            let[j] = reverseFullName[i];
-            i--;
-            j++;
-        }
-        for (char c : let) {
-            System.out.print(c);
-        }
+//        int i = reverseFullName.length - 1, j = 0;
+//        char[] let = new char[reverseFullName.length];
+//        while (i >= 0) {
+//            let[j] = reverseFullName[i];
+//            i--;
+//            j++;
+//        }
+//        for (char c : let) {
+        for(int i=reverseFullName.length-1; i>=0; i--)
+            System.out.print(reverseFullName[i]);
+
     }
 }
 
